@@ -4,6 +4,11 @@
 
 该插件通过代码操作（Code Actions）和命令的方式提供功能，让开发者更方便地在TypeScript代码中生成zod模式。
 
+## 链接
+
+- [github仓库](https://github.com/lsby/vscode-type-to-zod)
+- [vscode商店](https://marketplace.visualstudio.com/items?itemName=hbybyyang.lsby-vscode-type-to-zod)
+
 ## 功能
 
 - 在TypeScript和TypeScript React文件中，可以通过选中部分代码生成对应的zod模式。
