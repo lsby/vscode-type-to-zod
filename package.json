@@ -1,12 +1,16 @@
 {
-  "name": "playground-vscode-plugin",
-  "displayName": "playground-vscode-plugin",
+  "name": "lsby-vscode-type-to-zod",
+  "displayName": "type to zod",
   "version": "0.0.0",
-  "description": "",
+  "description": "从ts类型定义生成zod描述",
   "categories": [
     "Other"
   ],
-  "publisher": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lsby/vscode-type-to-zod"
+  },
+  "publisher": "hbybyyang",
   "main": "./dist/extension.js",
   "scripts": {
     "check:all": "npm run check:format && npm run check:lint && npm run check:type",
@@ -27,19 +31,17 @@
     "test:base": "vitest run",
     "test:coverage": "vitest run --coverage && open-cli ./coverage/index.html"
   },
-  "contributes": {
-    "commands": [
-      {
-        "command": "playground-vscode-plugin.helloWorld",
-        "title": "playground-vscode-plugin: Hello World"
-      }
-    ]
+  "contributes": {},
+  "activationEvents": [
+    "onLanguage:typescript",
+    "onLanguage:typescriptreact"
+  ],
+  "dependencies": {
+    "ts-to-zod": "^3.13.0"
   },
-  "activationEvents": [],
-  "dependencies": {},
   "devDependencies": {
     "@ianvs/prettier-plugin-sort-imports": "^4.3.1",
-    "@lsby/eslint-config": "^0.2.6",
+    "@lsby/eslint-config": "^0.2.7",
     "@types/eslint": "^9.6.1",
     "@types/node": "22.7.0",
     "@types/vscode": "^1.92.0",
