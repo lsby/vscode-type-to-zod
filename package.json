@@ -1,7 +1,7 @@
 {
   "name": "lsby-vscode-type-to-zod",
   "displayName": "type to zod",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "从ts类型定义生成zod描述",
   "categories": [
     "Other"
